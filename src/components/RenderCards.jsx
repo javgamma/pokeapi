@@ -24,7 +24,7 @@ const RenderCards = () => {
   };
 
   useEffect(() => {
-    getPokemonData(125); // ID de Electabuzz
+    getPokemonData(122); // ID de Electabuzz
   }, []);
 
   if (error) return <div>Error: {error.message}</div>;
