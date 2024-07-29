@@ -8,6 +8,8 @@ const PokeCard = ({ allPokemons }) => {
   const { setId } = useContext(PokeContext);
 
   const getPokemonDetails = async () => {
+    if (!allPokemons || allPokemons.length === 0) return;
+
     try {
       const responseDetails = await Promise.all(
         allPokemons.map((pokeitem) => {
