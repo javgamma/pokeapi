@@ -44,7 +44,7 @@ const handleLoadMore = () => {
   return (
     <div>
     <PokeCard allPokemons={allPokemons}/>
-    {hasMore && <button  className='border p-3 rounded-lg font-bold bg-red-500 opacity-80'onClick={handleLoadMore}>Give me more!</button>}
+    {hasMore && <button  className='border p-3 rounded-lg font-bold bg-red-500 opacity-80 flex justify-center items-center m-auto'onClick={handleLoadMore}>Give me more!</button>}
     </div>
   )
 }
